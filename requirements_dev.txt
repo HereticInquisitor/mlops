@@ -5,7 +5,7 @@ flask
 seaborn
 mlflow==2.2.2
 dvc
-
+xgboost
 
 pytest==7.1.3
 tox==3.25.1
