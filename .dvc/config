@@ -1,4 +1,6 @@
 [core]
-    remote = myremote
+    remote = myremote2
 ['remote "myremote"']
     url = /tmp/dvcstore
+['remote "myremote2"']
+    url = /home/ayush/Ayush/projects/mlops/remote_data
