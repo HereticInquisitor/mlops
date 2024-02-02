@@ -14,3 +14,10 @@ stages:
       - artifacts/train.csv
       - artifacts/preprocessor.pkl
       - artifacts/model.pkl
+
+  prediction:
+    cmd: python src/pipeline/prediction_pipeline.py
+    deps:
+      - src/pipeline/prediction_pipeline.py
+      - artifacts/preprocessor.pkl
+      - artifacts/model.pkl
