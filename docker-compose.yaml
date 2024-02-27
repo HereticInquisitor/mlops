@@ -16,5 +16,5 @@ services:
     image: flaskimage
     container_name: gemstone-prediction-flask
     ports:
-      - "80:80"
+      - "5000:5000"
     

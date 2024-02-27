@@ -24,7 +24,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info("data ingestion started")
         try:
-            data=pd.read_csv("/home/ayush/Ayush/projects/mlops/experiments/data/train.csv")
+            data=pd.read_csv(Path(os.path.join("experiments/data","training.csv")))
             logging.info(" reading a df")
 
             os.makedirs(os.path.dirname(os.path.join(self.ingestion_config.raw_data_path)),exist_ok=True)
